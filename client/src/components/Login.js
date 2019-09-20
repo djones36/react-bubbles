@@ -25,7 +25,7 @@ const Login = props => {
     <div>
       <h1>Welcome to the Bubble App!</h1>
       <form onSubmit={loginEvent}>
-        <field>
+        <label>
           UserName
           <input
             type="text"
@@ -34,8 +34,9 @@ const Login = props => {
             value={login.username}
             onChange={changeHandler}
           />
-        </field>
-        <field>
+        </label>
+
+        <label>
           password
           <input
             type="password"
@@ -44,7 +45,7 @@ const Login = props => {
             value={login.password}
             onChange={changeHandler}
           />
-        </field>
+        </label>
         <button type="submit">Login</button>
       </form>
     </div>
