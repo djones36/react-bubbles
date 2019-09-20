@@ -18,6 +18,7 @@ const BubblePage = () => {
         console.log("error on getting colors data");
       });
   });
+
   return (
     <>
       <ColorList colors={colorList} updateColors={setColorList} />
